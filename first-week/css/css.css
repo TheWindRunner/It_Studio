@@ -1,0 +1,573 @@
+/*css reset code */
+
+/****  文字大小初始化,使1em=10px *****/
+body {
+font-size:62.5%;
+} /* for IE/Win */
+html>body {
+font-size:10px;
+} /* for everything else */
+
+/*字体边框等初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+ padding: 0;
+ margin: 0;
+ }
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ }
+fieldset,img {
+ border: 0;
+ }
+ img {
+ display:block;
+ }
+address,caption,cite,code,dfn,th,var {
+ font-weight: normal;
+ font-style: normal;
+ }
+ol,ul{
+ list-style: none;
+ }
+ li{
+ 	list-style-type: none;
+ }
+caption,th {
+ text-align: left;
+ }
+h1,h2,h3,h4,h5,h6 {
+ font-weight: normal;
+ font-size: 100%;
+ }
+q:before,q:after {
+ content:'';
+ }
+abbr,acronym { border: 0;
+ }
+
+a {
+text-decoration:none;
+}
+p{word-wrap:break-word}
+select {  
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/  
+  border: solid 1px #000;  
+  
+  /*很关键：将默认的select选择框样式清除*/  
+  appearance:none;  
+  -moz-appearance:none;  
+  -webkit-appearance:none;  
+  
+  /*在选择框的最右侧中间显示小箭头图片*/  
+  background: url(../images/con-arrow.png) no-repeat scroll right 9px center transparent;  
+  
+  
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/  
+  padding-right: 14px;  
+  padding-right: 5px;
+  border-color: rgb(169,169,169);
+}  
+
+/*以上为reset的css*/
+/*以下为header部分css*/
+.letter{
+	font-family: poppin,"PingFang SC",Tahoma,Arial,微软雅黑,sans-serif;
+   /* font-weight: 400;*/
+}
+.letter div{
+	position: relative;
+}
+.header{
+  height: 54px;
+  width: 1920px;
+  background: rgb(33,137,191) url(../images/logo.png) no-repeat scroll 50px 9px;
+}
+.search{
+	width: 288px;
+	height: 30px;
+	border:none;
+	background: white url(../images/hd-search-ico.png) no-repeat scroll 18px 6px;
+	border-radius: 30px;
+	position: relative;
+	top: 12px;
+	left: 69%;
+	outline: none;
+	padding-left: 50px;
+}
+.login{
+	width: 65px;
+	height: 30px;
+	background: transparent url(../images/login.png) no-repeat scroll 0 8px;
+	display: inline-block;
+	position: absolute;
+	top: 13px;
+	left: 1700px;
+	padding-left: 20px;
+	padding-top: 8px;
+	font-size: 10px;
+	color: white;
+	cursor:pointer;
+}
+.main{
+	width: 1920px;
+	height: 1417px;	
+}
+  
+ /*以上为header部分css*/ 
+/*以下为lside部分css*/
+.lside{
+	width: 288px;
+	height: 1417px;
+	background-color: rgb(46,42,61);
+	color:rgb(109,128,150);
+    float:left;
+}
+.account{
+	width: 208px;
+	height: 79px;
+	background-color:transparent;
+	background-image:url(../images/circle_side.png) ,url(../images/circle.png) ;
+	background-repeat: no-repeat;
+	background-size: 56px 56px,48px 48px;
+	background-position:  43px 15px, 48px 19px;
+	padding-top: 32px;
+	padding-left: 125px;
+	font-size: 18px;
+}
+.collectionAndFans{
+	background:transparent; ;
+	font-size: 14px;
+	padding-left: -20px;
+	height: 76px;
+}
+.collectionAndFans div{
+	float: left;
+}
+.collectionAndFans span{
+	font-size: 18px;
+}
+.line{
+	width: 1px;
+	height: 28px;
+	background-color:rgb(109,128,150);
+	position: relative;
+	top: 7px;
+	left: 25px;
+	opacity: 0.3;
+}
+.selfsheet{
+    height: 228px;
+    background-color:rgb(56,62,78);
+}
+.selfsheet:before {
+     content: " ";
+     display: table;
+}
+.bigletter{
+	font-size: 14px;
+	padding-left: 75px;
+	height: 17px;
+	line-height: 20px;
+	margin-top: 40px;
+}
+.doc{
+	font-size: 12px;
+	margin-top: 20px;
+	padding-left: 145px;
+	height: 16px;
+	line-height: 15px;
+}
+.file{
+	font-size: 12px;
+	padding-left: 120px;
+	margin-top: 20px;
+}
+.sheet{
+	background-color: transparent;
+	background-image: url(../images/bg.png) ;
+	background-repeat:no-repeat ;
+	background-position: 47px 1px;
+	margin-top: 10px;
+	color: white;
+	background-size: 15px 105px;
+}
+.file:nth-child(2){
+	background-color: transparent;
+	background-image: url(../images/con-rightarrow.png),url(../images/bg.png)  ;
+	background-repeat:no-repeat ;
+	background-size: 8px 13.6px,15px 105px;
+	background-position: 78px 1px,96px -14.59px;		
+}
+.file:nth-child(3){
+	background-color: transparent;
+	background-image: url(../images/con-arrow.png),url(../images/bg.png)  ;
+	background-repeat:no-repeat ;
+	background-size: 15.3px 8.5px,15px 105px;
+	background-position: 74px 5px,96px -29px;
+	color: white;
+	background-transform:rotate(-180deg);
+}
+.doc:nth-child(4){
+	background-color: transparent;
+	background-image: url(../images/bg.png)  ;
+	background-repeat:no-repeat ;
+	background-size: 15px 105px;
+	background-position: 120px -45px;
+	color: white;
+}
+.doc:nth-child(5){
+	background-color: transparent;
+	background-image: url(../images/bg.png)  ;
+	background-repeat:no-repeat ;
+	background-size: 15px 105px;
+	background-position: 120px -45px;
+}
+.file:nth-child(6){
+	background-color: transparent;
+	background-image: url(../images/con-rightarrow.png),url(../images/bg.png)  ;
+	background-repeat:no-repeat ;
+	background-size: 8px 13.6px,15px 105px;
+	background-position: 78px 1px,96px -14.59px;
+}
+.selfcollection, .gallery ,.development{
+	background-color: transparent;
+	background-image: url(../images/bg.png) ;
+	background-repeat:no-repeat ;
+	background-position: 47px -58.6px;
+	background-size: 15px 105px;
+}
+.selfcollection{
+	margin-top: 15px;
+}
+.share{
+	background-color: transparent;
+	background-image: url(../images/bg.png) ;
+	background-repeat:no-repeat ;
+	background-position: 47px -73px;
+	background-size: 15px 105px;
+}
+.information{
+	background-color: transparent;
+	background-image: url(../images/bg.png) ;
+	background-repeat:no-repeat ;
+	background-position: 47px -89px;
+	background-size: 15px 105px;
+}
+/*以上为lside部分css*/
+
+/*以下为rside部分css*/
+.rside{
+	height: 1417px;
+	width: 1632px;
+	background:rgb(238,238,238);
+	float: left;
+	position: relative;
+}	
+.cweb{
+	font-size: 15px;
+	height:36px;
+	width:100%;
+	background-color:white;
+	color:rgb(171,171,171);
+	padding-left:50px;
+	line-height:36px;
+}
+.top{
+	display:inline;
+	padding-left:10px;
+	padding-right:10px;
+	cursor: pointer;
+}
+.top:nth-child(4){
+	color: rgb(33,137,190)
+}
+.main-main{
+	width: 80%;
+	height: 90%;
+    background-color: transparent;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+/*mainmain里面的第一条*/
+.SelectBox{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	border:1px ridge rgb(171,171,171);
+	color:rgb(171,171,171);
+	font-size:18px;
+}
+.SelectBox before {
+     content:" ";
+     display: table;
+}
+.selectbox:nth-child(1){
+	width: 15%;
+	height: 100%;
+	background-color: transparent;
+	display: inline-block;
+	padding-left: 20px;
+	margin-left: 40px;
+}
+.selectbox:nth-child(2){
+	width: 25%;	
+	height: 100%;
+	display: inline-block;
+	background: transparent url(../images/exchange.png) no-repeat scroll right 81px top 37px;
+	background-size: 32.4px 44.4px;
+	margin-left: 40px;
+}
+.selectbox:nth-child(3){
+	width: 30%;
+	position: absolute!important;
+    background-color: transparent;
+    height: 100%;
+	display: inline-block;
+	margin-left: -40px;
+}
+.searchbox{
+	width: 18%;
+	background-color:transparent;
+	height: 100%;
+	display: inline-block;
+}
+select{
+	padding-left: 10px;
+	font-size: 18px;
+}
+.inquire{
+	position: absolute;
+	top: 30px;
+	left: 40px;
+}
+.firstfirm{
+	position: absolute;
+	top: 30px;
+	left: 105px;
+	width: 90px;	
+}
+.buyer{
+	position: absolute;
+	left: 20px;
+	top: 30px;
+}
+.seller{
+	position: absolute;
+	left: 20px;
+	top: 60px;
+}
+.littleA{
+    position: absolute;
+	left: 68px;
+	top: 30px;
+	width: 140px;
+}
+.littleC{
+	position: absolute;
+	left: 68px;
+	top: 60px;
+	width: 140px;
+}
+.date{
+	position: absolute;
+	left: 23px;
+	top: 29px;
+}
+.time{
+	position: absolute;
+	left: 208px;
+	top: 28px;
+}
+.population{
+	position: absolute;
+	left: 23px;
+	top: 62px;
+}
+.confirmedOrder{
+	position: absolute;
+	left: 150px;
+	top: 60px;
+}
+.certainTime{
+  position: absolute;
+  color: black;
+	left: 68px;
+	top: 30px;
+	background: none;
+	width: 130px;
+}
+.eightdays{
+	position: absolute;
+	left: 270px;
+	top: 30px;
+	width: 65px;
+}
+.tenpers{
+	position: absolute;
+	left: 68px;
+	top: 60px;
+	width: 75px;
+}
+.tenitems{
+	position: absolute;
+	left: 215px;
+	top: 60px;
+	width: 120px;
+}
+.searchbox{
+	position: absolute!important;
+	display: inline-block;
+	left: 950px;
+	cursor: pointer;
+}
+.searchbox1{
+	width: 60px;
+	height: 30px;
+	background-color: rgb(38,138,192);
+	position: absolute;
+	left: 20px;
+	top: 44px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 3px;
+
+}
+
+/*mainmain里面第二条*/
+.history{
+	width: 100%;
+	height: 90px;
+	background-color:transparent;
+	margin-top: 20px;
+
+}
+.history div{
+	float: left;
+	margin: 0 5px;
+	background-color: white !important;
+	text-align: center;
+	padding-top: 5px;
+	border-top: 1px ridge rgb(171,171,171);
+	border-left: 1px ridge rgb(171,171,171);
+}
+.history a{
+	float: left;
+	margin: 0 5px;
+	background-color: white;
+	text-align: center;
+	padding-top: 5px;
+	border-top: 1px ridge rgb(171,171,171);
+	border-left: 1px ridge rgb(171,171,171);
+}
+.left,.right{
+	width: 30px;
+	height: 100%;
+	cursor:pointer;
+}
+.money{
+	width: 160px;
+	height: 100%;
+}
+.left{
+	margin-left: 0px!important;
+	background: url(../images/con-leftarrow.png) center center no-repeat scroll;
+}
+.right{
+	background: url(../images/con-rightarrow.png) center center no-repeat scroll;
+}
+.money:hover{
+	padding-top:1px!important;
+	border-top: solid 5px rgb(33,137,191)!important;
+	height: 90px;
+	padding-top: 1px;
+}
+.ampm{
+    font-size: 17px;
+    padding-top: 10px;
+}
+.moneyline{
+	padding-top: 10px;
+}
+.yuan{
+	font-size: 20px;
+	font-family: Arial;
+    color: rgb(171,171,171);   
+}
+.number{
+	font-size: 28px;
+	color: rgb(236,102,2);
+}
+.history-inquire{
+	width: 196px;
+	height: 100%;
+	margin-right: 0px !important;
+	background: url(../images/con-his.png) no-repeat 26px 25px scroll;
+	background-size: 42px 42px;
+}
+.inquire-1{
+	position: absolute;
+	top: 35px;
+	left: 83px;
+	font-size: 18px;
+}
+.statistics{
+	font-size: 15px;
+	margin-top: 35px;
+}
+.turnover{
+     width: auto;
+     height: 122px;
+     margin-top: 5px;
+}
+.turnover-num{
+	width: 287px;
+	height: 120px;
+	background:white;
+	margin: 0 22px;
+	float: left;
+	border: 1px ridge rgb(171,171,171);
+	border-left: none;	
+}
+.turnover-num:nth-child(1){
+	margin-left: 0;
+	border-left: 5px solid rgb(67,178,159);
+}
+.turnover-num:nth-child(2){
+	border-left: 5px solid rgb(57,138,193);
+}
+.turnover-num:nth-child(3){
+	border-left: 5px solid rgb(207,75,54);
+}
+.turnover-num:nth-child(4){
+	width: 288.59px;
+	margin-right: 0;
+	border-left: 5px solid rgb(226,205,70);
+}
+.turnoverRealNum{
+	font-size: 16px;
+	margin-top: 35px;
+	margin-left: 8px;
+}
+.TurnOver{
+	font-size: 14px;
+	color:rgb(171,171,171);
+	margin-top: 10px;
+	margin-left: 8px;
+}
+.turnover-background{
+	width: 110px;
+	height: 80px;
+	position: absolute !important;
+	top: 50% ;
+	margin-top:-40px;
+	left: 160px;
+	border-radius: 2px;
+}
+
+
+
+/*以上为rside部分css*/
+

@@ -1,0 +1,457 @@
+/*字体边框等初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+ padding: 0;
+ margin: 0;
+ }
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ }
+fieldset,img {
+ border: 0;
+ }
+ img {
+ display:block;
+ }
+ input,button,textarea,select,optgroup,option {
+    font-family:inherit;
+    font-size:inherit;
+    font-style:inherit;
+    font-weight:inherit;
+}
+address,caption,cite,code,dfn,th,var {
+ font-weight: normal;
+ font-style: normal;
+ }
+ol,ul{
+ list-style: none;
+ }
+ li{
+ 	list-style-type: none;
+ }
+caption,th {
+ text-align: left;
+ }
+h1,h2,h3,h4,h5,h6 {
+ font-weight: normal;
+ font-size: 100%;
+ }
+q:before,q:after {
+ content:'';
+ }
+abbr,acronym { border: 0;
+ }
+
+a {
+text-decoration:none;
+}
+p{word-wrap:break-word}
+
+/*以上为初始化代码*/
+*{
+	font-family: wf_segoe-ui_normal,wf_segoe-ui_semilight,wf_segoe-ui_light,Arial,sans-serif;
+}
+.parent:before{
+     content:" ";
+     display:table;
+}
+.header{
+	width: 100%;
+	height: 830px;
+	background: url(../images/HomePage/HomePage-Background.png) no-repeat scroll;
+	background-size:100% 830px;
+}
+.header-body{
+	width: 940px;
+	height: 100%;
+	margin: auto;
+}
+.headr-body-top{
+	width: 100%;
+	margin-top: 95px;
+	position: relative;
+	z-index: 5;
+}
+.navigation{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0px;
+}
+.navigation-li{
+	display: inline-block;
+	color: white;
+	font-weight:500;
+	font-size: 21px;
+	margin-top: 10px;
+	padding-bottom: 5px;
+	margin-left: 15px;
+	border-bottom:2px transparent solid;
+	cursor: pointer;
+}
+.navigation-li:hover{
+	border-bottom: 2px rgb(26,188,156) solid;
+}
+.header-body-body{
+	width: 940px;
+	position: absolute;
+	top:213px;
+	height: 600px;
+}
+.product1{
+	position: absolute;
+	left: -285px;
+	bottom: -32px;
+}
+.product1-instruction{
+	color: rgb(255,255,255);
+	width: 387px;
+	height: 350px;
+	position: absolute;
+	right: 0;
+	top: 115px;
+	text-align: center;
+}
+.product1-instruction-head{
+	font-size: 30px;
+	margin-top: 30px;
+	text-align: left;
+}
+.product1-instruction-main{
+	margin-top: 45px;
+	font-size: 20px;
+	text-align: left;
+}
+.product1-button{
+	width: 180px;
+	height: 50px;
+	border-radius: 3px;
+	background-color: yellow;
+	position: absolute;
+	top: 250px;
+	line-height: 50px;
+	cursor: pointer;
+	font-size: 21px;
+}
+.product1-or{
+	width: 25px;
+	height: 25px;
+	border-radius: 999px;
+	color: black;
+	background-color: white;
+	position: absolute;
+	top: 264px;
+	left: 173px;
+	z-index: 1;
+	line-height: 25px;
+}
+.product1-button-1{
+	background-color: rgb(26,188,156);
+}
+.product1-button-2{
+	left: 192px;
+	background-color: rgb(52,152,219);
+}
+.main{
+	width: 100%;
+	height: 1190px;
+	overflow: hidden;
+	margin-top: 0px;
+
+	/*position: absolute;
+	margin:auto;*/
+}
+.homepage-device{
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+.homepage-device-block{
+	width: 940px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+}
+.homepage-device-insider{
+	width: 31%;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+}
+.homepage-device-insider1{
+	left: 0;
+}
+.homepage-device-insider2{
+	left: 35%;
+}
+.homepage-device-insider3{
+	left: 70%;
+}
+.homepage-device-img{
+	margin: auto;
+}
+.homepage-device-img1{
+	margin-top: 62px;
+}
+.homepage-device-img2{
+	margin-top: 50px;
+}
+.homepage-device-img3{
+	margin-top: 57px;
+}
+.homepage-device-h3{
+	font-size: 25px;
+	margin-top: 30px;
+}
+.homepage-device-h4{
+	font-size: 15px;
+	margin-top: 15px;
+	line-height: 24px;
+}
+.homepage-product2{
+	width: 100%;
+	height: 700px;
+	background:url(../images/HomePage/HomePage-Background2.png) no-repeat;
+	background-size: 100% 521px;
+	text-align: center;
+}
+.homepage-product2-body{
+	width: 940px;
+	height: 100%;
+	margin:auto;
+	color: white;
+	position: relative;
+}
+.homepage-product2-h2{
+	margin-top: 50px;
+	font-size: 30px;
+}
+.homepage-product2-h3{
+	margin-top: 20px;
+	font-size: 19px;
+	font-weight: 300;
+	padding-left:170px;
+	padding-right: 170px;
+	line-height: 35px;
+}
+.circle-show{
+	width: 549px;
+	height: 417px;
+	margin:auto;
+	margin-top: 42px;
+	position: relative;
+	overflow: hidden;
+}
+.circle-show img{
+	width: 549px;
+	height: 417px;
+    position: absolute;
+}
+.homepage-arrow-left{
+	position: absolute;
+	left: 0;
+	top: 300px;
+	cursor: pointer;
+}
+.homepage-arrow-right{
+	position: absolute;
+	right: 0;
+	top: 300px;
+	cursor: pointer;
+}
+.footer{
+	height: 80px;
+	width: 100%;
+	background-color: rgb(58,75,91);
+}
+.footer-ul{
+	display: block;
+	width: 940px;
+	height: 100%;
+	margin:auto;
+}
+.footer-li{
+     display: inline-block;
+     color:white;
+     font-size: 19px;
+     line-height: 80px;
+     margin-left: 2px;
+     margin-right: 2px;
+}
+.footer-li:nth-child(-n+3){
+	cursor: pointer;
+}
+.content_main{
+	width: 100%;
+	height: 1900px;
+	margin-top: 170px;
+	overflow: hidden;
+}
+.content_main_block_1,.content_main_block_2,.content_main_block_3,.content_main_block_4{
+	width: 940px;
+	height:400px;
+	margin: auto;
+	margin-top: 50px;
+	text-align: left;
+	position: relative;
+}
+.content_main_block_txt{
+	width: 334px;
+	height: 100%;
+	position: absolute;
+	margin-top: 2px;
+}
+.content_main_block_h2{
+	font-size: 30px;
+	margin-top: 52px;
+}
+.content_main_block_h3{
+	font-size: 19px;
+	margin-top: 21px;
+	line-height: 27px;
+}
+.content_main_block_img{
+	position: absolute;
+}
+
+/*第一块*/
+.content_main_block_1 .content_main_block_img{
+	width: 467px;
+	height: 324px;
+	right:38px;
+	background: url(../images/Content/Content-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*第二块*/
+.content_main_block_2 .content_main_block_txt{
+	right: 0;
+}
+.content_main_block_2 .content_main_block_img{
+	top: 43px;
+	width: 553px;
+	height: 269px;
+	background: url(../images/Content/Content-2.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*第三块*/
+.content_main_block_3 .content_main_block_img{
+	right:0;
+	top: 80px;
+	width: 578px;
+	height: 198px;
+	background: url(../images/Content/Content-3.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*第四块*/
+.content_main_block_4{
+	width: 914px;
+	height:276px; 
+	background-image:url(../images/Content/Content-red.png) ;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+/*第五块*/
+.colors{
+	text-align: center;
+	font-size: 25px;
+	margin-top: 50px;
+}
+.color_change{
+	margin:auto;
+	margin-top: 12px;
+	width: 200px;
+	height: 58px;
+}
+.red{
+	width: 58px;
+	display: inline-block;
+	margin-right: 13px;
+	height: 58px;
+	background: rgb(78,46,49);
+	cursor: pointer;
+}
+.gray{
+	width: 58px;
+	margin-right: 13px;
+	height: 58px;
+	cursor: pointer;
+	display: inline-block;
+	background: rgb(150,151,155);
+}
+.blue{
+	width: 58px;
+	height: 58px;
+	cursor: pointer;
+	display: inline-block;
+	background: rgb(54,74,85);
+}
+/*.red:hover .*/
+/*左边*/
+.content_main_block_1 .content_main_block_txt,.content_main_block_3 .content_main_block_txt,.content_main_block_2 .content_main_block_img{
+	left: -1200px;
+}
+/*右边*/
+.content_main_block_1 .content_main_block_img,.content_main_block_3 .content_main_block_img,.content_main_block_2 .content_main_block_txt{
+	right: -1200px;
+}
+/*颜色*/
+.content_main_block_4,.colors,.color_change{
+	opacity: 0;
+}
+.product_main{
+	width: 940px;
+	height: 1030px;
+	margin: auto;
+	overflow: hidden;
+	text-align: center;
+}
+.product_surface{
+	opacity: 0;
+}
+.product_surface h2{
+	font-size: 30px;
+	margin-top: 60px;
+}
+.product_list{
+	margin-top: 575px;
+}
+.product_list h2{
+	font-size: 30px;
+	margin-top: 90px;
+}
+.product_list_show{
+	width: 940px;
+	height: 300px;
+	margin-top: 70px;
+}
+.product_list_block{
+	width: 33%;
+	height: 100%;
+	display: inline-block;
+}
+.product_list_block h3{
+	font-size: 22px;
+	margin-top: 15px;
+}
+.product_list_block h4{
+	display: block;
+	margin:auto;
+	width: 112px;
+	height: 40px;
+	border-radius: 5px;
+	line-height: 40px;
+	background: rgb(27,188,155);
+	color: white;
+	cursor: pointer;
+	font-size: 17px;
+	margin-top: 15px;
+	font-weight: 500;
+	opacity: 0.8;
+}
+.product_list_block h4:hover{
+	opacity: 1;
+
+}
